@@ -10,4 +10,4 @@ Manifest:
 
 
 Disclaimer: All of the things described here are based on my current knowledge which could be a more or less accurate reflection of the reality. The ideas could change frequently based on my experience evolution. 
-# Is more like trying to see if the things could be better rather than criticizing some ideas or criticizing the previous work of other very smart people which I really respect.
+## Is more like trying to see if the things could be better rather than criticizing some ideas or criticizing the previous work of other very smart people which I really respect.
