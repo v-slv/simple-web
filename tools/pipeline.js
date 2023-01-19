@@ -23,3 +23,10 @@ function executeOperations(data, operations, index) {
         executeOperations(operations[index](data), operations, index + 1);
     }
 }
+
+// Example
+// const filterStudentsByCountry = (data) => {data.students = data.students.filter(s => s.country === 'RO'); return data;}
+// const renderStudents = ... logic to render the students
+// const myPipeline = pipeline({students: []}, [filterStudentsByCountry, renderStudents]);
+
+// myPipeline.students = await fetch('/students')... // assigning the students array to the pipeline will trigger the predefined operations
