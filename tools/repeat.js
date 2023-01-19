@@ -1,3 +1,6 @@
+/*
+* An utilitary function, that could be used to render each item of a collection, using a custom render callback, inside a given host element
+*/
 export function repeat(host, collection, itemRenderCallback) {
     if (!(host instanceof HTMLElement)) {
         return;
