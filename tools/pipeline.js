@@ -1,6 +1,6 @@
 
 /**
- * A pipeline is a simple, working in isolation, that allows you to automatically perform synchronous operations on an object whenever its properties change
+ * A pipeline is a simple, working in isolation, function that allows you to automatically perform synchronous operations on an object whenever its properties change
  * @param {*} data 
  * @param {*} operations 
  * @returns 
