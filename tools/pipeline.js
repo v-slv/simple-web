@@ -1,23 +1,21 @@
 
 /**
- * A pipeline is a simple tool that allows you to execute different pipes representing behaviours of a given data object
- * Could be compared with data binding state-machine but in a very simple way using JS Proxy
- * The Proxy set a trap on the initial data object, every time a property change the pipes are reexecuted in the given order
+ * A pipeline is a simple, working in isolation, that allows you to automatically perform synchronous operations on an object whenever its properties change
  * @param {*} data 
- * @param {*} pipes 
+ * @param {*} operations 
  * @returns 
  */
-export function pipeline(data, pipes) {
+export function pipeline(data, operations) {
 
     return new Proxy(data, {
         set: function(t, p, n, r) {
-            executePipes(t, pipes, 0);
+            executePipes(t, operations, 0);
             t[p] = n;
             return true;
         }
     });
 }
 
-function executePipes(data, pipes, index) {
+function executePipes(data, operations, index) {
 
 }
