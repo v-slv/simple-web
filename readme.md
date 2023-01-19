@@ -6,6 +6,7 @@ Manifest:
 - Avoid generic, stricly required patterns that intend to solve all of the problems. While the intention is good, sometimes it constrains too much the developer and make the architecture definition process too painful because you need to fit your specific solution in a predefined generic pattern.
 - Avoid the blackbox magic. Every tool or function should be highly transparent. While the logic abstraction and code reuse is extremly beneficial, I belive sometimes the existing frameworks are trying to hide too many things behind the scene and therefore nothing is really well understood.
 - Avoid browser native behaviour hijacking (e.g Single Page Apps routers) 
+- The Web and programming is fun. There should be no fear in deviating from a pattern. 
 
 
 Disclaimer: All of the things described here are based on my current understanding wich could be more or less accurate. The ideas could change frequently based on my experience evolution.
