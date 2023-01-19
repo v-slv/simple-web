@@ -9,4 +9,4 @@ Manifest:
 - The Web and programming is fun. There should be no fear in deviating from a pattern. 
 
 
-Disclaimer: All of the things described here are based on my current understanding wich could be more or less accurate. The ideas could change frequently based on my experience evolution.
+Disclaimer: All of the things described here are based on my current knowledge which could be a more or less reflection of the reality. The ideas could change frequently based on my experience evolution. Is more like trying to see if the things could be better rather than criticizing some ideas or the previous work of others which I really respect.
