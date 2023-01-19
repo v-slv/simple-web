@@ -20,6 +20,6 @@ export function pipeline(data, operations) {
 
 function executeOperations(data, operations, index) {
     if (index < operations.length) {
-        executePipes(operations[index](data), operations, index + 1);
+        executeOperations(operations[index](data), operations, index + 1);
     }
 }
