@@ -18,7 +18,7 @@ export function pipeline(data, operations) {
     });
 }
 
-function executePipes(data, operations, index) {
+function executeOperations(data, operations, index) {
     if (index < operations.length) {
         executePipes(operations[index](data), operations, index + 1);
     }
