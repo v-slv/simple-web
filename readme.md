@@ -1,4 +1,4 @@
-My first attempt to  demonstrate how to use modern JS features to simplify the web development. The motivation for this project is to help the web dev to evolve in a more clean and simple process, avoiding too many tools/frameworks/librariers/complex patterns and paradigms that could become to hard to manage on mid-late dev cycle. My belive is that the web apps should stay as simple as possible, allowing developers to focus on their specific problem.
+My first attempt to  demonstrate how to use modern JS features to simplify the web development. The motivation for this project is to help the web dev to evolve in a more clean and simple process, avoiding too many tools/frameworks/librariers/complex patterns and paradigms that could become to hard to manage on mid-late dev cycle. My belive is that the web apps should stay as simple as possible, allowing developers to focus on their specific problem rather than understanding a complex generic framework.
 
 
 Manifest:
