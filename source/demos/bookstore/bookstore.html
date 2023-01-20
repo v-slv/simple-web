@@ -1,0 +1,55 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input type="search" id="bookstore-search-input">
+    <div id="bookstore-wrapper">
+
+    </div>
+
+    <script type="module">
+        import { repeat } from '../../tools/repeat.js';
+        import { objectEffects } from '../../tools/pipeline.js';
+        import { inputTrap } from '../../tools/input-trap.js';
+        import { search } from './operations/search.js';
+
+        const bookstoreSeachInput = document.getElementById('bookstore-search-input');
+        const bookstoreWrapper = document.getElementById('bookstore-wrapper');
+
+
+        // define effects
+        const filterBooks = (data) => {
+            return {
+                ...data, books: search(data.books, 'title', data.searchInput)
+            }
+        }
+
+        const renderBooks = (data) => {
+            repeat(bookstoreWrapper, data.books, (book) => `<h2>${book.title}</h2>`);
+            return data;
+        }
+
+        // define bookstore effects
+        const bookstoreEffects = objectEffects({
+            searchInput: null,
+            loading: true,
+            books: []
+        }, [filterBooks, renderBooks]);
+
+        // symulate async fetch
+        setTimeout(() => {
+            bookstoreEffects.books = [{ title: 'Book1' }, { title: 'Book2' }];
+        }, 2000);
+
+        // Trap the input and provide the searchInput to the bookstore effects
+        inputTrap(bookstoreSeachInput, (value) => {
+            bookstorePipeline.searchInput = value;
+        });
+
+    </script>
+</body>
+
+</html>
