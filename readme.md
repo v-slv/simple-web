@@ -5,7 +5,7 @@ Manifest:
 - Use simpler and smaller, context isolated tools, implemented as modules that could be imported on demand to solve very specific problems
 - Avoid generic, stricly enforced framework-like patterns that intend to solve all of the problems. While the intention is good, sometimes it constrains too much the developer and make the architecture definition process too painful because you need to fit your specific solution in a predefined generic pattern.
 - Avoid the blackbox magic. Every tool or function should be highly transparent. While the logic abstraction and code reuse is extremly beneficial, I belive sometimes the existing frameworks are trying to hide too many things behind the scene and therefore nothing is really well understood.
-- Every tool, should provide a specific solution to a problem, and its integration should be always in addition, not by substracting a specific solution from a bigger complex tool
+- The solutions should be implemented by constructing step by step using with available tools in isolation, rather than deconstructing complex generic tools
 - Avoid browser native behaviour hijacking (e.g Single Page Apps routers) 
 - The Web and programming is fun. There should be no fear in deviating from a pattern. 
 
