@@ -8,7 +8,6 @@
  * @returns 
  */
 export function objectEffects(data, effects) {
-
     return new Proxy(data, {
         set: function(t, p, n, r) {
             t[p] = n;
@@ -20,14 +19,7 @@ export function objectEffects(data, effects) {
 
 function executeEffects(data, effects, index) {
     if (index < effects.length) {
-        console.log('executin operation ', index, data);
         executeEffects(effects[index](data), effects, index + 1);
     }
 }
 
-// Example
-// const filterStudentsByCountry = (data) => {data.students = data.students.filter(s => s.country === 'RO'); return data;}
-// const renderStudents = ... logic to render the students
-// const myPipeline = pipeline({students: []}, [filterStudentsByCountry, renderStudents]);
-
-// myPipeline.students = await fetch('/students')... // assigning the students array to the pipeline will trigger the predefined operations
